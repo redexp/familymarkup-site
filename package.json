@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "familymarkup-site",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -14,5 +14,10 @@
     "@astrojs/rss": "^4.0.9",
     "@astrojs/sitemap": "^3.2.1",
     "astro": "^4.16.10"
+  },
+  "devDependencies": {
+    "hast-util-to-text": "^4.0.2",
+    "highlight-familymarkup": "^1.1.0",
+    "unist-util-visit": "^5.0.0"
   }
 }
