@@ -64,91 +64,91 @@ Edwin + Theresa =
 Steve
 ```
 
-Бувають випадки, коли в родині є декілька сімей з однаковим прізвищем, але прямими родичами вони не є. У такому випадку можна просто додати [коментар](#коментарі) у якому пояснити, про яку саме родину йде мова, а можна додати вигаданий варінт прізвища, який допоможе уникнути плутанини при написанні [посилань](#посилання-на-імʼя) на імʼя.
+There are cases when a family tree includes several families with the same surname, but they are not relatives. In such situation, you can simply add a [comment](#comments) to clarify which specific family is being referred to, or you can create an alternate version of the surname to avoid confusion when writing [references](#name-reference) to a name.
 
 ```fml
-Вовк (Вовк-Суми)
+Brown (Brown-NYC)
 
-Петро + Марина =
-Віталій
+Richard + Susan =
+Joseph
 
-Марина - хрещена мати Оксани Вовк
+Susan - godmother of Karen Brown
 
-Вовк
-* ті шо з Києва
+Brown
+* from LA
 
-Назар + Вікторія =
-Віталій
-Оксана
+Thomas + Sarah =
+Joseph
+Karen
 
-Назар - хрещений батько Віталія Вовк-Суми
+Thomas - godfather of Joseph Brown-NYC
 ```
-На останньому рядку ми описали відносини між `Назаром` та `Віталієм Вовк`, але `Віталій` є в обох родинах, тому ми використали варіант прізвища `Вовк-Суми`, щоб не було плутанини. Іншим варінтом можна додати до одного з Віталіїв [варіант напису імені](#варіанти-напису-імені) наприклад `Вєталь` і тоді можна буде записати `Вєталь Вовк` замість `Віталій Вовк-Суми`.
+On the last line, we described the relationship between `Thomas` and `Joseph Brown`, but since `Joseph` exists in both families, we used the surname variant `Brown-NYC` to avoid confusion. Another option is to use a [name variation](#name-variants) for one of the Josephs, such as `Joe`, allowing us to write `Joe Brown` instead of `Joseph Brown-NYC`.
 
 ## First Name
 
-Слово з великої літери у складі опису [відносин](#відносини) між членами сімʼї вважається **імʼям**. Подвійні імена треба записувати через тире без пробілів.
+A capitalized word within the description of [relationships](#relationships) between family members is considered a **name**. Double names should be written with a hyphen and no spaces.
 
 ### Name Variants
 
-Так само як і прізвище, імʼя теж має варіанти напису через кому у дужках. Наприклад гарне імʼя `David`, але у вашій сімʼї кажуть `Сашко` і ви хочете щоб це було записано. Також, зручніше у описі якихось відносин використовувати звичне імʼя замість "гарного".
+Just like a surname, a name can also have variations written in parentheses, separated by commas. For example, the proper name might be `Thomas`, but in your family, he is called `Tom` and you want this to be recorded. It is often more convenient to use the familiar name instead of the proper one when describing relationships.
 
 ```fml
-Бондаренко
+Williams
 
-Михайло + Надія =
-David (Сашко, Саньок)
-Анатолій (Толік)
+Christopher + Lisa =
+Thomas (Tom)
+Richard (Richie, Ricky)
 
-Сашко і Толік - близнюки
+Tom and Richie - twins
 ```
 
 ### Surname Changes
 
-Слово в дужках **перед** імʼям вказує на те, що людина змінила прізвище на те що в дужках.
+A word in parentheses **before** a name indicates that the person has changed their surname to the one in parentheses.
 
 ```fml
-Олійник
+Wilson
 
-Степан + Анастасія =
-(Шевченко) Яна
+Charles + Nancy =
+(Johnson) Sandra
 
-Шевченко
+Johnson
 
-Юрій + Яна Олійник
+Matthew + Sandra Wilson
 ```
 
-Якщо ви зробили такий запис, то на людину можна [посилатися](#посилання-на-імʼя) як за рідним прізвищем, так і за зміненим.
+If such a record is made, the person can be [referred](#name-reference) to by both surnames: the original and the changed one.
 
 ### Name Reference
 
-Два слова, обидва з великої літери, вважаються **посиланням** на імʼя з іншої родини. Перше слово - це імʼя, а друге - прізвище.
+Two words, both starting with capital letters, are considered a **reference** to a person from another family. The first word represents the given name and the second word represents the surname.
 
 ```fml
-Ткаченко
+Davies
 
-Олег + Юлія Кравченко =
-Петро
+Anthony + Betty Patel =
+Mark
 
-Кравченко
+Patel
 
-Віктор + Соломія Коваль =
-Юлія
+Donald + Ashley Robinson =
+Betty
 ```
 
 ### Dubious Name
 
-Будь-яка кількіть слів які закінчуються знаком питання вважаються **імʼям під питанням** - це означає, що ви не впевнені, що людину звуть саме так. Ви можете навіть не писати імʼя, а написати хочаб щось, що ви памʼятаєте про людину, наприклад `дівчинка?`. Можна навіть записати просто знак питання без слів, якщо ви нічого не помʼятаєте, лише те що людина була в сімʼї.
+Any number of words ending with a question mark is considered a **dubious name** indicating uncertainty about the person's actual name. You can even skip the name entirely and write something descriptive that you remember about the person, such as `girl?`. Alternatively, you can simply write a question mark if you remember nothing specific except that the person was part of the family.
 
 ```fml
-Поліщук
+Thompson
 
-Роман + Ніна Шевчук? =
-Андрій
-хлопчик?
+Steven + Emily Evans? =
+Andrew
+boy?
 ?
 ```
-Ми описали сімʼю у якій маму звати наче `Ніна Шевчук`, але це не точно, тому редактор не буде намагатись шукати родину `Шевчук` і людину з іменем `Ніна` у ній. У цій сімʼї три дитини: першу точно звати `Андрій`, другий відомо тілько що він хлопчик, про третю нічого не памʼятаєм. Знаки питання будуть вам нагадуванням, що цю інформацію треба у когось уточнити.
+We described a family where the mother's name is possibly `Emily Evans`, so the editor (app that understand FamilyMarkup) will not attempt to find a family named `Evans` or a person named `Emily` within it. This family has three children: the first is definitely named `Andrew`, the second is only known to be a boy, and nothing is remembered about the third. The question marks will serve as a reminder to confirm this information with someone.
 
 ## Relationships
 
@@ -174,21 +174,21 @@ David (Сашко, Саньок)
 ```fml
 Ткач
 
-Степан + Jennifer Козак =
+Charles + Jennifer Козак =
 Віктор
 
 Гончаренко
 
 папа? + мама? =
 Данило
-Назар
+Thomas
 
 Данило + Ярослава Кулик =
 Катерина
 
-Назар + Яна Костюк
+Thomas + Sandra Костюк
 
-Катерина і Назар - хрещені батьки Віктора Ткача
+Катерина і Thomas - хрещені батьки Віктора Ткача
 ```
 В цьому випадку, група людей перед тире не лише обʼєднана словами з маленької літери після тире, але й має відношеня до групи людей (в цьому випадку лише одна людина) після слів з маленької літери.
 
@@ -203,8 +203,8 @@ David (Сашко, Саньок)
 ```fml
 Яковенко
 
-Сергій + Марина Білоус = живуть окремо
-(Зінченко) Надія (Надя)
+Сергій + Susan Білоус = живуть окремо
+(Зінченко) Lisa (Надя)
 Артем (Тьома)
 ```
 
