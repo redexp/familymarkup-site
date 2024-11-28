@@ -152,63 +152,63 @@ We described a family where the mother's name is possibly `Emily Evans`, so the 
 
 ## Relationships
 
-Перелік двох груп імен розділених одним зі [знаків відношення](#знаки-відношення) є **відносинами**. Є два типи відносин: звичайні та сімейні.
+A list of two groups of names separated by one of the [relation symbols](#relationship-symbols) constitutes a **relationship**. There are two types of relationships: regular and familial.
 
 ### Regular Relationships
 
-Звичайні відносини пояснюють, що поеднує одних людей з іншими. Наприклад близнюки
+Regular relationships explain what connects certain people to others. For example, twins.
 
 ```fml
-Костенко
+Walker
 
-Денис + Діана Павлюк =
-Юля
-Людмила (Люда)
+Paul + Donna White =
+Michelle
+Amanda
 
-Юля і Люда - близнюки
+Michelle and Amanda - twins
 ```
-На останньому рядку ми описали словом після знаку тире (один із [знаків відношення](#знаки-відношення)), що обʼєднує группу людей перед знаком тире. Розділяти імена необхідно одним з [розділових знаків](#розділові-знаки). В нашому випадку це слово з маленької літери.
+On the last line, we described with a word following the dash (one of the [relation symbols](#relationship-symbols)) what connects the group of people listed before the dash. Names must be separated by one of the [separators](#punctuation-marks). In our case it was a word `and`.
 
-Приклад опису хрещених батьків
+Example of a description of godparents
 
 ```fml
-Ткач
+Roberts
 
-Charles + Jennifer Козак =
-Віктор
+Charles + Jennifer Green =
+Joshua
 
-Гончаренко
+Clarke
 
-папа? + мама? =
-Данило
+father? + mother? =
+Kevin
 Thomas
 
-Данило + Ярослава Кулик =
-Катерина
+Kevin + Amanda Wood =
+Melissa
 
-Thomas + Sandra Костюк
+Thomas + Sandra Harris
 
-Катерина і Thomas - хрещені батьки Віктора Ткача
+Melissa and Thomas - godparents of Joshua Roberts
 ```
-В цьому випадку, група людей перед тире не лише обʼєднана словами з маленької літери після тире, але й має відношеня до групи людей (в цьому випадку лише одна людина) після слів з маленької літери.
+In this case, the group of people before the dash is not only connected by the words in lowercase after the dash but also has a relationship to the group of people (in this case, a single person) mentioned after the lowercase words.
 
 ### Family Relationships
 
-Сімейні відносини розділяють дві групи людей (імена батьків і імена дітей) за допомогою виключно символа `=`. У сімейних відносинах усі імена **після** знаку рівності створюють нових членів родини, а не посилаються на вже записаних, як у випадку зі звичайними відносинами. Якщо імена записані **до** знака рівності вже існують в родині (описані вище поточної сімʼї), то ці члени родини будуть вважатися батьками поточної сімʼї. Якщо якісь з імен не описані вище в родині, то вони теж будуть додані до родини, просто в них не буде опису хто батьки цих імен.
+Family relationships divide two groups of names (names of parents and names of children) using only the `=` symbol. In family relationships, all names **after** the equals sign represent new members of the family, rather than referring to already written ones, as is the case with regular relationships. If the names written **before** the equals sign already exist in the family tree (described above the current family), these family members will be considered the parents of the current family. If some of the names are not described earlier in the family tree, they will also be added to the family, but without a description of who the parents of these names are.
 
-Якщо імена батьків обʼєднані знаком плюс, то це означає, що вони у шлюбі, якщо будь-яким [іншим знаком](#розділові-знаки), то це означає, що між батьками серйозних відносин не було. Якщо батьки були у шлюбі, але розлучилися, то це можна записани після знаку рівності.
+If the parents' names are joined by a plus sign, it indicates that they are married. If they joined by any [other symbol](#punctuation-marks), it means that there was no serious relationship between the parents. If the parents were married but later divorced, this can be written after the equals sign.
 
-Ви можете записати імена дітей через кому (або іншим [розділовим знаком](#розділові-знаки)), але зручніше писати кожне імʼя на окремому рядку.
+You can list the children's names separated by commas (or another [punctuation mark](#punctuation-marks)), but it is more convenient to write each name on a separate line.
 
 ```fml
-Яковенко
+Edwards
 
-Сергій + Susan Білоус = живуть окремо
-(Зінченко) Lisa (Надя)
-Артем (Тьома)
+Brian + Susan Turner = live separately
+(Cooper) Elisabeth (Lisa)
+Timothy (Tim)
 ```
 
-Якщо ви запишете імʼя мами без [посилання](#посилання-на-імʼя) на іншу родину і не як [імʼя під питанням](#імʼя-під-питанням), то це означатиме, що мама від народження є членом поточної родини.
+If you write the mother's name without a [reference](#name-reference) to another family and not as a [dubious name](#dubious-name), it will mean that the mother has been a member of the current family since birth.
 
 ### Punctuation Marks
 
