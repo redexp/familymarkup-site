@@ -212,45 +212,45 @@ If you write the mother's name without a [reference](#name-reference) to another
 
 ### Punctuation Marks
 
-Групи людей можна розділяти:
+Names in group can be separated using any of the following options:
 
-- комами
-- плюсами
-- словами з маленької літери у будь-якій кількості
-- записувати кожне імʼя з нового рядка
+- comma `,`, primarily in [regular relationships](#regular-relationships).
+- plus `+`, primarily in [family relationships](#family-relationships).
+- Words in lowercase, in any quantity.
+- Writing each name on a new line.
 
 ### Relationship Symbols
 
-Знаки відношення розділяють людей на дві групи, або просто пояснюють чим обʼєднана група людей до знаку відношення за допомогою слів з маленької літери після знаку відношення
+Relation symbols divide names into two groups or simply explain what unites the group of people **before** the relation symbol, using [words](#relationship-description) written in lowercase **after** the relation symbol.
 
-Можна використовувати наступні знаки:
+The following symbols can be used:
 
-- знак рівності: `=`. Використовується виключно для створення [сімейних відносин](#сімейні-відносини)
-- тире: `-`. Використовується для створення [звичайних відносин](#звичайні-відносини)
-- стрілки: `->`, `<-`, `<->`. Те саме що і тире, але з додатковою інформацією про напрям відносин між двома групами.
+- equality sign `=`. Used exclusively for creating [family relationships](#family-relationships).
+- dash `-`. Used to create [regular relationships](#regular-relationships).
+- arrows: `->`, `<-`, `<->`. Similar to a dash but provide additional information about the direction of relationships between two groups.
 
-Стрілки будуть корисними для програм які будують діаграми. Загалом буде достатньо тире і знака рівності.
+Arrows are useful for programs that build diagrams. In most cases, a dash and an equality sign will suffice.
 
 ### Relationship Description
 
-Одразу після знаку відношення можна додати опис зі слів з маленької літери. Як правило це зовсім коротке пояснення від одного до трьох слів. Наприклад: `хрещений`, `живуть окремо`, `найкращі у світі друзі`. Якщо потрібно використати якісь символи окрім букв, то використовуйте [коментарі](#коментарі).
+Immediately after the relation symbol, you can add a description consisting of lowercase words. Typically, this is a very brief explanation of one to three words, such as `godparent`, `live apart` or `best friends forever`. If you need to use symbols other than letters, then use [comments](#comments).
 
 ## Comments
 
-Коментарі можна робити лише на окремому рядку та починаючи одним з символів:
+Comments can only be made on a separate line and must start with one of the following symbols:
 
-- слеш `/`, як у багатьох мовах програмування
-- решітка `#`, також поширений символ для початку коментарів
-- зірочка `*`, зручний символ щоб не перемикати розкладку клавіатури
+- slash `/`, as in many programming languages (a single slash is sufficient).
+- hash `#`, a commonly used symbol for starting comments.
+- asterisk `*`, a convenient symbol to avoid switching keyboard layouts.
 
-Після символу початку коментаря ви можете писати будь-який текст. Наприклад ви можете записати дату народження або смерті.
+After the comment-starting symbol, you can write any text. For example, you can note down a birth or death date.
 
 ```fml
-Лисенко
-/ з Черкас
+Clark
+/ from London
 
-Олег + Аліна? =
-# зараз живуть в Америці
-Богдан
-* дн: 21.08.92
+Ryan + Dorothy? =
+# currently live in US
+Jacob
+* BD: 31/12/92
 ```
