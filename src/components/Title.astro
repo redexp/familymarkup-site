@@ -1,10 +1,54 @@
+---
+import lang from '../lib/lang';
+
+const __ = lang(Astro.props.lang);
+---
+
 <header>
-    <small>🌐 <a href="/">EN</a> <a href="/uk">UA</a></small>
-    <h1>FamilyMarkup</h1>
+    <nav>
+        <a href="/" class="logo"><img src="/favicon.svg" alt="Logo"/></a>
+
+        <div class="menu">
+            💻 <a href="/apps">{__('apps')}</a>
+            📦 <a href="/packages">{__('packages')}</a>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>FamilyMarkup</h1>
+
+        <small>🌐 <a href="/">EN</a> <a href="/uk">UA</a></small>
+    </div>
 </header>
 
 <style>
-	header > small {
-		float: right;
-	}
+	header nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+
+        .logo {
+            display: block;
+            line-height: 0;
+
+            img {
+                height: 50px;
+            }
+        }
+
+        .menu a {
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .title {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
 </style>

@@ -1,0 +1,14 @@
+locales:
+  - en
+  - uk
+  - ru
+
+apps:
+  - Apps
+  - Застосунки
+  - Приложения
+
+packages:
+  - Packages
+  - Пакунки
+  - Пакеты
