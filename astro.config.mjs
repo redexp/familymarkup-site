@@ -1,5 +1,6 @@
 import {defineConfig} from 'astro/config';
 import mdx from '@astrojs/mdx';
+import yml from '@rollup/plugin-yaml';
 import highlight from './lib/rehype-familymarkup.mjs';
 
 export default defineConfig({
@@ -26,4 +27,7 @@ export default defineConfig({
 		}]],
 		syntaxHighlight: false,
 	},
+	vite: {
+		plugins: [yml()]
+	}
 });

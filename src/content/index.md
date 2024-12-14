@@ -103,24 +103,26 @@ Tom and Richie - twins
 
 ### Surname Changes
 
-A word in parentheses **before** a name indicates that the person has changed their surname to the one in parentheses.
+In [family relationships](#family-relationships), the surname following the child's name indicates that the person has changed their last name.
 
 ```fml
 Wilson
 
 Charles + Nancy =
-(Johnson) Sandra
+Sandra Johnson
 
 Johnson
 
 Matthew + Sandra Wilson
 ```
 
-If such a record is made, the person can be [referred](#name-reference) to by both surnames: the original and the changed one.
+If such a record is made, the person can be [referred](#name-reference) to by both surnames: the original `Sandra Wilson` and the changed one `Sandra Johnson`.
 
 ### Name Reference
 
 Two words, both starting with capital letters, are considered a **reference** to a person from another family. The first word represents the given name and the second word represents the surname.
+
+A single capitalized word (a name) within [regular relationships](#regular-relationships) or names from the parents list in [family relationships](#family-relationships) are also **references**, but only to members of the current surname.
 
 ```fml
 Davies
@@ -132,6 +134,19 @@ Patel
 
 Donald + Ashley Robinson =
 Betty
+Laura
+
+Betty and Laura - twins
+```
+
+When you write a reference to someone, you may change up to the last two letters of the surname or name. It's useful in languages with [grammatical case](https://en.wikipedia.org/wiki/Grammatical_case). This is not very useful for English. Generally, the ending `'s` will suffice.
+
+```fml
+Harrison
+
+Justin - Brandon's godfather
+
+Justin - godfather of Brandon
 ```
 
 ### Dubious Name
@@ -146,6 +161,7 @@ Andrew
 boy?
 ?
 ```
+
 We described a family where the mother's name is possibly `Emily Evans`, so the editor (app that understand FamilyMarkup) will not attempt to find a family named `Evans` or a person named `Emily` within it. This family has three children: the first is definitely named `Andrew`, the second is only known to be a boy, and nothing is remembered about the third. The question marks will serve as a reminder to confirm this information with someone.
 
 ## Relationships
@@ -165,7 +181,7 @@ Amanda
 
 Michelle and Amanda - twins
 ```
-On the last line, we described with a word following the dash (one of the [relation symbols](#relationship-symbols)) what connects the group of people listed before the dash. Names must be separated by one of the [separators](#punctuation-marks). In our case it was a word `and`.
+On the last line, we described [with a word](#relationship-description) following the dash (one of the [relation symbols](#relationship-symbols)) what connects the group of people listed before the dash. Names must be separated by one of the [separators](#punctuation-marks). In our case it was a word `and`.
 
 Example of a description of godparents
 
@@ -196,14 +212,14 @@ Family relationships divide two groups of names (names of parents and names of c
 
 If the parents' names are joined by a plus sign, it indicates that they are married. If they joined by any [other symbol](#punctuation-marks), it means that there was no serious relationship between the parents. If the parents were married but later divorced, this can be written after the equals sign.
 
-You can list the children's names separated by commas (or another [punctuation mark](#punctuation-marks)), but it is more convenient to write each name on a separate line.
+You can list the children's names separated by commas (or another [punctuation mark](#punctuation-marks)), but it is more convenient to write each name on a separate line. Additionally, you can write numbers with a dot before the children's names. It's useful to see the order of each child and the total number of children.
 
 ```fml
 Edwards
 
 Brian + Susan Turner = live separately
-(Cooper) Elisabeth (Lisa)
-Timothy (Tim)
+1. Elisabeth (Lisa) Cooper
+2. Timothy (Tim)
 ```
 
 If you write the mother's name without a [reference](#name-reference) to another family and not as a [dubious name](#dubious-name), it will mean that the mother has been a member of the current family since birth.
