@@ -1,0 +1,30 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer>
+	<a href="/LICENSE.txt">MIT with Attribution © {year}</a>
+
+	<a href="//github.com/redexp/familymurkup-site" class="github">
+		<img src="/github.svg" alt="Github"/>
+	</a>
+</footer>
+
+<style>
+	footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 80px;
+		margin-top: 1.5em;
+		border-top: 1px solid #e5e7eb;
+	}
+
+	.github {
+		line-height: 0;
+
+		img {
+			height: 34px;
+		}
+	}
+</style>
