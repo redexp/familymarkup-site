@@ -1,7 +1,5 @@
 ---
 import Main from './Main.astro';
-import Title from '../components/Title.astro';
-import Footer from '../components/Footer.astro';
 import {Content as Slogan} from '../content/slogan.md';
 
 const {lang = 'en'} = Astro.props;
@@ -17,10 +15,7 @@ const {lang = 'en'} = Astro.props;
 		slot="head"
 	/>
 
-	<Title lang={lang}/>
 	<Slogan/>
 
 	<slot/>
-
-	<Footer/>
 </Main>
