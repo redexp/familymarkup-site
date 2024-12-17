@@ -1,3 +1,6 @@
+---
+layout: '../layouts/Md.astro'
+---
 An exceptional language designed for creating family trees of any complexity. Its foundation is built on names and surnames.
 
 ```fml
