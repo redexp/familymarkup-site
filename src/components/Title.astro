@@ -21,7 +21,7 @@ const pathname = Astro.url.pathname.replace(/^\/\w{2}\b/, '');
     </nav>
 
     <div class="title">
-        <h1>{title}</h1>
+        <h1>{__(title)}</h1>
 
         <small>🌐 <a href={pathname}>EN</a> <a href={"/uk" + pathname}>UA</a></small>
     </div>
