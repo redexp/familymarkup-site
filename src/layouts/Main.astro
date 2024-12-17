@@ -2,18 +2,24 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Title from "../components/Title.astro";
+import __, {langFrom} from '../lib/lang';
 
 const {
-    lang = 'en',
-    title = 'FamilyMarkup',
-    description = '',
+    frontmatter: data = {},
+    lang = data.lang || langFrom(Astro.url),
+    title = data.title || 'FamilyMarkup',
+    description = data.description || '',
 } = Astro.props;
 ---
 
 <!doctype html>
 <html lang={lang}>
 <head>
-    <BaseHead title={title} description={description}/>
+    <BaseHead
+        title={__(lang, title)}
+        description={description}
+    />
+
     <slot name="head"/>
 </head>
 
