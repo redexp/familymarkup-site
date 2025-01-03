@@ -3,8 +3,10 @@ layout: '../layouts/Main.astro'
 title: 'apps'
 ---
 
-* [VSCode extension](https://vscode.org) - supports: autocompletion, errors and warnings highlighting, code folding and many more.
+* [VSCode extension](/familymarkup-1.6.2.vsix) - (Windows and Linux only for now) supports: autocompletion, errors and warnings highlighting, code folding and many more.
 
 ### TODO
 
-* [ ] [Zed extension](https://zed.dev/extensions)
+* [Zed extension](https://zed.dev/extensions)
+* ... all popular editors that support [Language Server Protocol](https://microsoft.github.io/language-server-protocol/)
+

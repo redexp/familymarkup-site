@@ -2,10 +2,15 @@
 import Main from './Main.astro';
 import {Content as Slogan} from '../content/slogan.md';
 
-const {lang = 'en'} = Astro.props;
+const {
+	frontmatter: data = {},
+	lang,
+	title = data.title,
+	slogan = data.slogan,
+} = Astro.props;
 ---
 
-<Main lang={lang}>
+<Main lang={lang} title={title}>
     <link
 		rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-solarizedlight.min.css"
@@ -15,7 +20,8 @@ const {lang = 'en'} = Astro.props;
 		slot="head"
 	/>
 
-	<Slogan/>
+	{slogan !== false &&
+	<Slogan/>}
 
 	<slot/>
 </Main>

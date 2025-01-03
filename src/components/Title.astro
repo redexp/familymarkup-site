@@ -12,11 +12,13 @@ const pathname = Astro.url.pathname.replace(/^\/\w{2}\b/, '');
 
 <header>
     <nav>
-        <a href="/" class="logo"><img src="/favicon.svg" alt="Logo"/></a>
+        <a href={url('/')} class="logo"><img src="/favicon.svg" alt="Logo"/></a>
 
         <div class="menu">
-            💻 <a href={url('apps')}>{__('apps')}</a>
-            📦 <a href={url('packages')}>{__('packages')}</a>
+            <a href={url('apps')}><i>💻</i> {__('apps')}</a>
+            <a href={url('packages')}><i>📦</i> {__('packages')}</a>
+            <a href={url('examples')}><i>📑</i> {__('examples')}</a>
+            <a href={url('support')}><i>🤝</i> {__('support')}</a>
         </div>
     </nav>
 
@@ -27,8 +29,8 @@ const pathname = Astro.url.pathname.replace(/^\/\w{2}\b/, '');
     </div>
 </header>
 
-<style>
-	header nav {
+<style lang="less">
+	nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -45,10 +47,27 @@ const pathname = Astro.url.pathname.replace(/^\/\w{2}\b/, '');
         }
 
         .menu a {
-            margin-right: 15px;
+            i {
+                font-style: normal;
+                text-decoration: none;
+            }
 
-            &:last-child {
-                margin-right: 0;
+            ~ a {
+                margin-left: 15px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            height: auto;
+
+            .logo img {
+                height: 100px;
+            }
+
+            .menu a {
+                display: block;
+                margin-left: 0 !important;
+                text-align: right;
             }
         }
     }
@@ -57,5 +76,22 @@ const pathname = Astro.url.pathname.replace(/^\/\w{2}\b/, '');
         display: flex;
         align-items: baseline;
         justify-content: space-between;
+
+        a {
+            margin-left: 6px;
+        }
+
+        @media (max-width: 500px) {
+            display: block;
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            small {
+                display: block;
+                text-align: right;
+            }
+        }
     }
 </style>

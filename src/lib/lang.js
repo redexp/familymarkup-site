@@ -1,4 +1,4 @@
-import i18n from '../content/i18n.yaml';
+import i18n from '../i18n.yaml';
 
 export default function lang(locale, text = '') {
 	const index = i18n.locales.indexOf(locale || 'en');

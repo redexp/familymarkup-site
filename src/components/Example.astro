@@ -1,0 +1,26 @@
+---
+import fs from 'node:fs/promises';
+import {basename, resolve} from 'node:path';
+import hg from 'highlight-familymarkup';
+import {defaultParams} from '../../lib/rehype-familymarkup.mjs';
+
+const {file} = Astro.props;
+const code = await fs.readFile(resolve(process.cwd(), 'src/examples', file), 'utf-8');
+const {html} = hg(code, {...defaultParams, html: true});
+---
+
+<details>
+    <summary>{basename(file)} <a href={"//github.com/redexp/familymarkup-site/blob/master/src/examples/" + file}>↗️</a></summary>
+
+    <pre class="language-fml"><code class="language-fml" set:html={html}/></pre>
+</details>
+
+<style>
+    summary {
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+        }
+    }
+</style>

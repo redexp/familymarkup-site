@@ -3,8 +3,9 @@ layout: '../../layouts/Main.astro'
 title: 'apps'
 ---
 
-* [VSCode extension](https://vscode.org) - підтримує: автозавершення, підсвічування помилок і зауважень, згортання частин коду і багато іншого.
+* [VSCode extension](/familymarkup-1.6.2.vsix) - (покищо тільки Windows та Linux) підтримує: автозавершення, підсвічування помилок і зауважень, згортання частин коду і багато іншого.
 
 ### У планах
 
-* [ ] [Zed extension](https://zed.dev/extensions)
+* [Zed extension](https://zed.dev/extensions) - має бути достатньо легко реалізувати як мінімум підсвічуваня синтаксису, так как парсер для FamilyMarkup написаний на [Tree-Sitter](https://tree-sitter.github.io/tree-sitter/) - рідному для Zed пакунку.
+* ... усі популярні редактори, які підтримують [Language Server Protocol](https://microsoft.github.io/language-server-protocol/)
