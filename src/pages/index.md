@@ -1,7 +1,9 @@
 ---
 layout: '../layouts/Md.astro'
 ---
-An exceptional language designed for creating family trees of any complexity. Its foundation is built on names and surnames.
+An exceptional language designed for creating family trees of any complexity. 
+Main idea is to write quickly and easily. 
+Its foundation is built on names and surnames.
 
 ```fml
 Smith
